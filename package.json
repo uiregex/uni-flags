@@ -28,9 +28,6 @@
     "pack": "npm pack",
     "publish": "npm publish uiwebkit-flag-0.0.1.tgz --access public"
   },
-  "dependencies": {
-
-  },
   "devDependencies": {
     "@stencil/core": "2.10.0",
     "stencil-inline-svg": "1.1.0"
