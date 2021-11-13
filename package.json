@@ -1,0 +1,43 @@
+{
+  "name": "@uiwebkit/flag",
+  "version": "0.0.1",
+  "description": "Uni Flags",
+  "license": "MIT",
+  "author": "Vitali Havryliuk",
+  "main": "dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/flag/flag.esm.js",
+  "jsdelivr": "dist/flag/flag.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build:dev": "stencil build --dev --watch ",
+    "build:prod": "stencil build",
+    "serve:dev": "stencil build --dev --watch --serve --no-open",
+    "serve:prod": "stencil build --watch --serve --no-open",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "pack": "npm pack",
+    "publish": "npm publish uiwebkit-flag-0.0.1.tgz --access public"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@stencil/core": "2.10.0",
+    "stencil-inline-svg": "1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiwebkit/flag.git"
+  },
+  "homepage": "https://uiwebkit.com/icn/1/flag/?type=element"
+}
