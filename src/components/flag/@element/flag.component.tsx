@@ -21,7 +21,7 @@ export class UniFlagComponent implements ComponentInterface {
     const UniFlagTag = !isEmptyString(name) ? `uni-flag-${name}` : null;
 
     return UniTemplate(
-      <UniFlagTag square={this.square || this.round} round={this.round}>
+      <UniFlagTag square={this.square || this.round} round={this.round} class={'uni-flag'}>
         <slot />
       </UniFlagTag>
     );
