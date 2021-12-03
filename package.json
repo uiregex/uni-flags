@@ -1,6 +1,6 @@
 {
   "name": "@uiwebkit/flag",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Uni Flags",
   "license": "MIT",
   "author": "Vitali Havryliuk",
@@ -26,12 +26,21 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "pack": "npm pack",
-    "publish": "npm publish uiwebkit-flag-0.0.2.tgz --access public"
+    "publish": "npm publish uiwebkit-flag-0.1.0.tgz --access public"
+  },
+  "dependencies": {
+    "@uiwebkit/common": "0.1.0"
   },
   "devDependencies": {
-    "@stencil/core": "2.10.0",
+    "@stencil/core": "2.11.0",
+    "prettier": "2.5.0",
     "stencil-inline-svg": "1.1.0"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/uiwebkit/flag.git"

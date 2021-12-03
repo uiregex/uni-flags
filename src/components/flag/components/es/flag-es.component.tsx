@@ -1,9 +1,9 @@
 import { Component, ComponentInterface, Element, Prop, Watch } from '@stencil/core';
 
+import { uniSetDefaultStyles, uniSetRound } from '@uiwebkit/common';
+
 import svg from '../../../../assets/svg/4x3/es.svg';
 import squareSvg from '../../../../assets/svg/1x1/es.svg';
-
-import { uniSetDefaultStyles, uniSetRound } from '../../../../utils';
 
 @Component({ tag: 'uni-flag-es' })
 export class UniFlagEsComponent implements ComponentInterface {

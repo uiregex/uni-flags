@@ -51,6 +51,11 @@ export namespace Components {
         "round": boolean;
         "square": boolean;
     }
+    interface UniFlagShadow {
+        "name": string;
+        "round": boolean;
+        "square": boolean;
+    }
     interface UniFlagUs {
         "round": boolean;
         "square": boolean;
@@ -123,6 +128,12 @@ declare global {
         prototype: HTMLUniFlagRuElement;
         new (): HTMLUniFlagRuElement;
     };
+    interface HTMLUniFlagShadowElement extends Components.UniFlagShadow, HTMLStencilElement {
+    }
+    var HTMLUniFlagShadowElement: {
+        prototype: HTMLUniFlagShadowElement;
+        new (): HTMLUniFlagShadowElement;
+    };
     interface HTMLUniFlagUsElement extends Components.UniFlagUs, HTMLStencilElement {
     }
     var HTMLUniFlagUsElement: {
@@ -141,6 +152,7 @@ declare global {
         "uni-flag-kr": HTMLUniFlagKrElement;
         "uni-flag-pt": HTMLUniFlagPtElement;
         "uni-flag-ru": HTMLUniFlagRuElement;
+        "uni-flag-shadow": HTMLUniFlagShadowElement;
         "uni-flag-us": HTMLUniFlagUsElement;
     }
 }
@@ -190,6 +202,11 @@ declare namespace LocalJSX {
         "round"?: boolean;
         "square"?: boolean;
     }
+    interface UniFlagShadow {
+        "name"?: string;
+        "round"?: boolean;
+        "square"?: boolean;
+    }
     interface UniFlagUs {
         "round"?: boolean;
         "square"?: boolean;
@@ -206,6 +223,7 @@ declare namespace LocalJSX {
         "uni-flag-kr": UniFlagKr;
         "uni-flag-pt": UniFlagPt;
         "uni-flag-ru": UniFlagRu;
+        "uni-flag-shadow": UniFlagShadow;
         "uni-flag-us": UniFlagUs;
     }
 }
@@ -224,6 +242,7 @@ declare module "@stencil/core" {
             "uni-flag-kr": LocalJSX.UniFlagKr & JSXBase.HTMLAttributes<HTMLUniFlagKrElement>;
             "uni-flag-pt": LocalJSX.UniFlagPt & JSXBase.HTMLAttributes<HTMLUniFlagPtElement>;
             "uni-flag-ru": LocalJSX.UniFlagRu & JSXBase.HTMLAttributes<HTMLUniFlagRuElement>;
+            "uni-flag-shadow": LocalJSX.UniFlagShadow & JSXBase.HTMLAttributes<HTMLUniFlagShadowElement>;
             "uni-flag-us": LocalJSX.UniFlagUs & JSXBase.HTMLAttributes<HTMLUniFlagUsElement>;
         }
     }

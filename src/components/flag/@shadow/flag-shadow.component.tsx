@@ -3,8 +3,9 @@ import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil
 import { isEmptyString, uniGetCleanContent } from '@uiwebkit/common';
 
 @Component({
-  tag: 'uni-flag',
+  tag: 'uni-flag-shadow',
   styleUrl: '../styles/flag.css',
+  shadow: true,
 })
 export class UniFlagComponent implements ComponentInterface {
 
