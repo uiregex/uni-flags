@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
-import { isEmptyString, uniGetCleanContent } from '@uiwebkit/common';
+import { isEmptyString, uniGetCleanContent, UniTemplate } from '@uiwebkit/common';
 
 @Component({
   tag: 'uni-flag-shadow',
@@ -21,7 +21,7 @@ export class UniFlagComponent implements ComponentInterface {
     const name = this.name || uniGetCleanContent(this.el);
     const UniFlagTag = !isEmptyString(name) ? `uni-flag-${name}` : null;
 
-    return (
+    return UniTemplate(
       <UniFlagTag square={this.square || this.round} round={this.round}>
         <slot />
       </UniFlagTag>
