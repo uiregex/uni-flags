@@ -29,10 +29,10 @@
     "publish": "npm publish uiwebkit-flag-0.1.0.tgz --access public"
   },
   "dependencies": {
+    "@stencil/core": "2.11.0",
     "@uiwebkit/common": "0.1.0"
   },
   "devDependencies": {
-    "@stencil/core": "2.11.0",
     "prettier": "2.5.0",
     "stencil-inline-svg": "1.1.0"
   },
