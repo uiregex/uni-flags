@@ -1,24 +1,22 @@
 {
   "name": "@uiwebkit/flag",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Uni Flags",
   "license": "MIT",
   "author": "Vitali Havryliuk",
   "main": "dist/index.cjs.js",
-  "module": "dist/custom-elements/index.js",
+  "module": "dist/index.js",
   "es2015": "dist/esm/index.js",
   "es2017": "dist/esm/index.js",
-  "types": "dist/custom-elements/index.d.ts",
+  "jsnext:main": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/flag/flag.esm.js",
-  "jsdelivr": "dist/flag/flag.esm.js",
-  "files": [
-    "dist/",
-    "loader/"
-  ],
+  "unpkg": "dist/flags/flags.esm.js",
+  "jsdelivr": "dist/flags/flags.esm.js",
+  "files": ["dist/"],
   "scripts": {
-    "build:dev": "stencil build --dev --watch ",
+    "build:dev": "stencil build --dev",
     "build:prod": "stencil build",
     "serve:dev": "stencil build --dev --watch --serve --no-open",
     "serve:prod": "stencil build --watch --serve --no-open",
@@ -26,14 +24,14 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "pack": "npm pack",
-    "publish": "npm publish uiwebkit-flag-0.1.1.tgz --access public"
+    "publish": "npm publish uiwebkit-flag-0.2.0.tgz --access public"
   },
   "dependencies": {
-    "@stencil/core": "2.11.0",
-    "@uiwebkit/common": "0.1.0"
+    "@stencil/core": "2.14.2",
+    "@uiwebkit/common": "0.1.3"
   },
   "devDependencies": {
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "stencil-inline-svg": "1.1.0"
   },
   "browserslist": [

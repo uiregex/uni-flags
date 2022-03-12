@@ -8,4 +8,5 @@ export * from './jp/flag-jp.component';
 export * from './kr/flag-kr.component';
 export * from './pt/flag-pt.component';
 export * from './ru/flag-ru.component';
+export * from './ua/flag-ua.component';
 export * from './us/flag-us.component';

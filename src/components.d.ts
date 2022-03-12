@@ -56,6 +56,10 @@ export namespace Components {
         "round": boolean;
         "square": boolean;
     }
+    interface UniFlagUa {
+        "round": boolean;
+        "square": boolean;
+    }
     interface UniFlagUs {
         "round": boolean;
         "square": boolean;
@@ -134,6 +138,12 @@ declare global {
         prototype: HTMLUniFlagShadowElement;
         new (): HTMLUniFlagShadowElement;
     };
+    interface HTMLUniFlagUaElement extends Components.UniFlagUa, HTMLStencilElement {
+    }
+    var HTMLUniFlagUaElement: {
+        prototype: HTMLUniFlagUaElement;
+        new (): HTMLUniFlagUaElement;
+    };
     interface HTMLUniFlagUsElement extends Components.UniFlagUs, HTMLStencilElement {
     }
     var HTMLUniFlagUsElement: {
@@ -153,6 +163,7 @@ declare global {
         "uni-flag-pt": HTMLUniFlagPtElement;
         "uni-flag-ru": HTMLUniFlagRuElement;
         "uni-flag-shadow": HTMLUniFlagShadowElement;
+        "uni-flag-ua": HTMLUniFlagUaElement;
         "uni-flag-us": HTMLUniFlagUsElement;
     }
 }
@@ -207,6 +218,10 @@ declare namespace LocalJSX {
         "round"?: boolean;
         "square"?: boolean;
     }
+    interface UniFlagUa {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
     interface UniFlagUs {
         "round"?: boolean;
         "square"?: boolean;
@@ -224,6 +239,7 @@ declare namespace LocalJSX {
         "uni-flag-pt": UniFlagPt;
         "uni-flag-ru": UniFlagRu;
         "uni-flag-shadow": UniFlagShadow;
+        "uni-flag-ua": UniFlagUa;
         "uni-flag-us": UniFlagUs;
     }
 }
@@ -243,6 +259,7 @@ declare module "@stencil/core" {
             "uni-flag-pt": LocalJSX.UniFlagPt & JSXBase.HTMLAttributes<HTMLUniFlagPtElement>;
             "uni-flag-ru": LocalJSX.UniFlagRu & JSXBase.HTMLAttributes<HTMLUniFlagRuElement>;
             "uni-flag-shadow": LocalJSX.UniFlagShadow & JSXBase.HTMLAttributes<HTMLUniFlagShadowElement>;
+            "uni-flag-ua": LocalJSX.UniFlagUa & JSXBase.HTMLAttributes<HTMLUniFlagUaElement>;
             "uni-flag-us": LocalJSX.UniFlagUs & JSXBase.HTMLAttributes<HTMLUniFlagUsElement>;
         }
     }
